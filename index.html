@@ -1,0 +1,891 @@
+
+<HTML>
+	<HEAD>
+	<TITLE>
+	成績照会</TITLE><link href="style.css" type="text/css" rel="stylesheet">
+	<!-- mod 2013/10/18 2013_成績システム移行 KnownProblem_17 start -->
+	<!-- <meta http-equiv=Content-Type content="text/html; charset=EUC-JP">-->
+	<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+	<!-- mod 2013/10/18 2013_成績システム移行 KnownProblem_17 end -->
+	<meta http-equiv="content-Script-Type" content="text/javascript">
+	<meta http-equiv="content-Style-Type" content="text/css">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="robots" content="noindex,nofollow">
+	</HEAD>
+	<BODY bgcolor = "#FFFFFF" TEXT="#000000" leftMargin="0" topMargin="0" Marginwidth="0" Marginheight="0">
+	<SCRIPT LANGUAGE="JavaScript">
+	<!--
+		var eflag = 0;
+		var myWin;
+		function check(name) {
+			
+			myWin = window.open('./epb2052.htm', name, 'scrollbars=yes,resizable=yes,width=800,height=500');
+			myWin.focus();
+			eflag = 1;
+			return myWin;
+			
+		}
+		
+		function js_check() {
+			if (document.javaEnabled()) {
+				return true;
+			} else {
+				return false;
+			}
+		}
+	-->
+	</SCRIPT>
+	<TABLE cellSpacing="0" width="100%" border="0" class="basecolor">
+	
+	  <TBODY>
+	
+	  <TR height="20">
+	
+		<td class="header" width="70%">&nbsp;&nbsp;早稲田大学事務サービス
+		</td>
+	
+	  </TR>
+	
+	  </tbody>
+	
+	</table>
+	
+	<TABLE cellSpacing="0" width="100%" border="0" class="basecolor">
+	
+	  <tbody>
+	
+	  <TR>
+	
+		<TD class="welcome" >&nbsp;&nbsp;Welcomeback&nbsp;野田　洋祐&nbsp;さん 
+	
+		</TD>
+	
+		<td class="welcome" style="text-align: right" width="15%">&nbsp;&nbsp;
+	
+	<INPUT TYPE="SUBMIT" VALUE=閉じる onClick="Javaxcript:window.close()">
+		</TD>  
+	
+	  </TR>
+	
+	  </tbody>
+	
+	</table>
+	
+	<TABLE cellSpacing="0" width="100%" border="0" class="basecolor">
+	
+	  <tbody>
+	
+	  <TR height="20">
+	
+		<TD class="navibar" width="70%">
+	
+	&nbsp;&nbsp;学生向けサービス&gt;&gt;成績照会
+		</TD>
+	
+		<td class="navibar" width="30%" style="text-align: right">&nbsp;
+	
+	
+		</td>
+	
+	  </TR>
+	
+	  </TBODY>
+	
+	</TABLE><TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=90%>
+	<TR>
+	<TD WIDTH=5%><BR></TD>
+	<TD>
+	<SCRIPT LANGUAGE="JavaScript">
+	<!--
+		document.write("<FORM NAME=FRM_TANI METHOD=POST>");
+		document.write("<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%>\n");
+		document.write("<TR CLASS='basechar'>\n");
+		document.write("\t<TD COLSPAN=2>");
+	-->
+	</SCRIPT>
+	<NOSCRIPT>
+	<FORM NAME=FRM_TANI METHOD=POST ACTION="./epb2052.htm" TARGET="_BLANK">
+	<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%>
+	<TR CLASS='basechar'>
+		<TD COLSPAN=2>
+	</NOSCRIPT>
+	<INPUT TYPE=HIDDEN NAME=hidden_counter VALUE="1">
+	1H210472　　野田　洋祐さんの成績です。</TD>
+	<SCRIPT LANGUAGE="JavaScript">
+	<!--
+		document.write("<TD ALIGN=RIGHT><INPUT TYPE=BUTTON NAME=P_TANI VALUE=\"単位修得状況の照会\" onClick=\"return check('win_tani')\"></TD>");
+	-->
+	</SCRIPT>
+	<NOSCRIPT>
+		<TD ALIGN=RIGHT><INPUT TYPE=SUBMIT NAME=P_TANI VALUE='単位修得状況の照会'></TD>
+	</NOSCRIPT>
+	<tr><td COLSPAN=2><br></td><TD ALIGN=RIGHT><INPUT TYPE=SUBMIT NAME=P_msg VALUE="伝達事項があります"></td></tr><tr><td COLSPAN=2><br></td><td ALIGN=RIGHT><font color=red>※必ず確認してください。</font></td></tr><TABLE BORDER=1 CELLPADDING=0 CELLSPACING=1>
+	<TR>	<TD width=95><B>&nbsp;&nbsp;学籍状態&nbsp;&nbsp;</B></TD>
+		<TD>在学中</TD>
+	</TR><TR>	<TD width=95><B>&nbsp;&nbsp;判定結果&nbsp;&nbsp;</B></TD>
+		<TD><PRE>【卒業判定結果】卒業（修了）（３月）</PRE></TD>
+	</TR><TR>	<TD width=95><B>&nbsp;&nbsp;外国語&nbsp;&nbsp;</B></TD>
+		<TD><BR></TD>
+	</TR><TR>	<TD width=95><B>&nbsp;&nbsp;クラス&nbsp;&nbsp;</B></TD>
+		<TD><BR></TD>
+	</TR></TABLE></FORM>
+	<FORM ACTION=/kyomu/epb2051.htm NAME=FRM_DETAIL METHOD=POST>
+	<INPUT TYPE=HIDDEN NAME=hidden_counter VALUE="1">
+	<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH=100%>
+	<TR CLASS="basechar">
+		<TD>
+	<INPUT TYPE=TEXT MAXLENGTH=4 NAME=P_YEAR SIZE=5>&nbsp;年度分のみ&nbsp;<INPUT TYPE=CHECKBOX NAME=P_DISPALL CHECKED>&nbsp;全て&nbsp;		<INPUT TYPE=SUBMIT NAME=P_GO VALUE="表示">
+		</TD>
+		<TD ALIGN=RIGHT>
+							<INPUT TYPE=BUTTON NAME=P_PRINTGO VALUE="印刷" onClick="window.print()">
+				</TD>
+	<tr><td><br></td></tr><tr>	<td width=100% CLASS=tinyfont>※成績欄に「*」がついている科目は成績がまだ決定していない科目です。今しばらくお待ちください。</td></tr><tr>	<td width=100% CLASS=tinyfont>※<a href="https://wnpspt.waseda.jp/student/supportanywhere/2021/02/12/course-registration-precaution/#6" target="_blank" style="font-size: 10px;">授業方法区分</a>がオンライン授業科目に分類される科目には科目名の末尾に[Online]と表記されます。</td></tr><tr>	<td width=100% CLASS=tinyfont>※この成績照会画面は印刷し、個人で参照することができますが、公式な証明書ではありません。</td></tr></TR>
+	</TABLE>
+	<BR>
+	<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=1 WIDTH=100%>
+	<TR CLASS="operationboxt">
+		<TH WIDTH=40%>科目名</TH>
+	<!-- ＧＰ対応(要項適用年度で表示を変更) 2010/08/11 CRS
+		<TH WIDTH=15%>取得年度</TH>
+		<TH WIDTH=15%>学期</TH>
+		<TH WIDTH=15%>単位</TH>
+		<TH WIDTH=15%>成績</TH>-->
+		<TH WIDTH=12%>取得年度</TH>
+		<TH WIDTH=12%>学期</TH>
+		<TH WIDTH=12%>単位</TH>
+		<TH WIDTH=12%>成績</TH>
+		<TH WIDTH=12%>ＧＰ</TH>
+	<!-- ここまで -->
+	</TR>
+	<TR CLASS='operationboxf'>
+		<TD>◎社会科学基礎教育課程◎</TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>　【初年次教育】</TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;ラーニング・コミュニティ Ｇ</TD>
+		<TD>2021</TD>
+		<TD>春ク</TD>
+		<TD>1</TD>
+		<TD>P</TD>
+		<TD></TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;学術的文章の作成　０２：【グローバル】　[Online]</TD>
+		<TD>2021</TD>
+		<TD>夏ク</TD>
+		<TD>1</TD>
+		<TD>B</TD>
+		<TD>2</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;統計リテラシーα　０１：【グローバル】　[Online]</TD>
+		<TD>2021</TD>
+		<TD>春ク</TD>
+		<TD>1</TD>
+		<TD>A</TD>
+		<TD>3</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;統計リテラシーβ　０２：【グローバル】　[Online]</TD>
+		<TD>2021</TD>
+		<TD>夏ク</TD>
+		<TD>1</TD>
+		<TD>B</TD>
+		<TD>2</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>　【必修英語】</TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;英語１-１（春学期） Ｅ</TD>
+		<TD>2021</TD>
+		<TD>春期</TD>
+		<TD>1</TD>
+		<TD>B</TD>
+		<TD>2</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;英語１-１（秋学期） Ｅ</TD>
+		<TD>2021</TD>
+		<TD>秋期</TD>
+		<TD>1</TD>
+		<TD>B</TD>
+		<TD>2</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;Tutorial English (Intermediate) C E8：【グローバル】</TD>
+		<TD>2021</TD>
+		<TD>秋ク</TD>
+		<TD>1</TD>
+		<TD>F</TD>
+		<TD>0</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;Tutorial English (Intermediate) D E8：【グローバル】</TD>
+		<TD>2021</TD>
+		<TD>冬ク</TD>
+		<TD>1</TD>
+		<TD>F</TD>
+		<TD>0</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;英語１-２（秋学期）／スピーチ Ａ　[Online]</TD>
+		<TD>2022</TD>
+		<TD>秋期</TD>
+		<TD>1</TD>
+		<TD>C</TD>
+		<TD>1</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;英語１-２（春学期）／スピーチ Ａ</TD>
+		<TD>2024</TD>
+		<TD>春期</TD>
+		<TD>1</TD>
+		<TD>A</TD>
+		<TD>3</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;英語２-１（春学期）Ａ　[Online]</TD>
+		<TD>2022</TD>
+		<TD>春期</TD>
+		<TD>1</TD>
+		<TD>B</TD>
+		<TD>2</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;英語２-１（秋学期）Ａ　[Online]</TD>
+		<TD>2022</TD>
+		<TD>秋期</TD>
+		<TD>1</TD>
+		<TD>A</TD>
+		<TD>3</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;英語２-２（コミュニケーション）（春学期）／会話 Ｑ</TD>
+		<TD>2022</TD>
+		<TD>春期</TD>
+		<TD>1</TD>
+		<TD>A+</TD>
+		<TD>4</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;英語２-２（コミュニケーション）（秋学期）／会話 Ｑ</TD>
+		<TD>2022</TD>
+		<TD>秋期</TD>
+		<TD>1</TD>
+		<TD>A+</TD>
+		<TD>4</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>　【教養外国語】</TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;フランス語１基礎 Ａ</TD>
+		<TD>2021</TD>
+		<TD>春期</TD>
+		<TD>1</TD>
+		<TD>B</TD>
+		<TD>2</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;フランス語２基礎 Ａ</TD>
+		<TD>2021</TD>
+		<TD>春期</TD>
+		<TD>1</TD>
+		<TD>B</TD>
+		<TD>2</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;フランス語１初級 Ａ</TD>
+		<TD>2021</TD>
+		<TD>秋期</TD>
+		<TD>1</TD>
+		<TD>C</TD>
+		<TD>1</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;フランス語２初級 Ａ</TD>
+		<TD>2021</TD>
+		<TD>秋期</TD>
+		<TD>1</TD>
+		<TD>C</TD>
+		<TD>1</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>　【コア科目】</TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>　　《共通入門群》</TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;社会調査の基礎 Ｂ</TD>
+		<TD>2021</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>F</TD>
+		<TD>0</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;ゲーム理論の基礎 Ａ</TD>
+		<TD>2021</TD>
+		<TD>春期</TD>
+		<TD>2</TD>
+		<TD>F</TD>
+		<TD>0</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;政治分析の基礎 Ｂ</TD>
+		<TD>2021</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>B</TD>
+		<TD>2</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;社会科学の基礎 Ｂ</TD>
+		<TD>2024</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>A</TD>
+		<TD>3</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>　　《専門入門群》</TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;マーケティング入門 Ａ</TD>
+		<TD>2021</TD>
+		<TD>春期</TD>
+		<TD>2</TD>
+		<TD>B</TD>
+		<TD>2</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;社会デザイン論入門 Ａ</TD>
+		<TD>2021</TD>
+		<TD>春期</TD>
+		<TD>2</TD>
+		<TD>A</TD>
+		<TD>3</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;私法入門（市民と法） Ｂ</TD>
+		<TD>2021</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>A</TD>
+		<TD>3</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;経済学入門 ２〔マクロ経済学〕 Ａ</TD>
+		<TD>2021</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>F</TD>
+		<TD>0</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;経済学入門 １〔ミクロ経済学〕 Ａ</TD>
+		<TD>2021</TD>
+		<TD>春期</TD>
+		<TD>2</TD>
+		<TD>B</TD>
+		<TD>2</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;経営学入門 Ｂ</TD>
+		<TD>2021</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>C</TD>
+		<TD>1</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;国際関係論入門 Ａ　[Online]</TD>
+		<TD>2022</TD>
+		<TD>春期</TD>
+		<TD>2</TD>
+		<TD>B</TD>
+		<TD>2</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>　【基盤専門科目他】</TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>　　《基盤専門科目》</TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;比較経済史 1</TD>
+		<TD>2021</TD>
+		<TD>春期</TD>
+		<TD>2</TD>
+		<TD>A</TD>
+		<TD>3</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;比較経済史 ２</TD>
+		<TD>2021</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>B</TD>
+		<TD>2</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;ソシオダイナミクス ２　[Online]</TD>
+		<TD>2022</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>A+</TD>
+		<TD>4</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;ポピュラー・カルチャーの社会科学　[Online]</TD>
+		<TD>2022</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>A+</TD>
+		<TD>4</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;バイオエシックス　[Online]</TD>
+		<TD>2022</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>A+</TD>
+		<TD>4</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;組織行動論</TD>
+		<TD>2022</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>B</TD>
+		<TD>2</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;ソシオダイナミクス １　[Online]</TD>
+		<TD>2023</TD>
+		<TD>春期</TD>
+		<TD>2</TD>
+		<TD>A+</TD>
+		<TD>4</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;Social History 1　[Online]</TD>
+		<TD>2023</TD>
+		<TD>春期</TD>
+		<TD>2</TD>
+		<TD>B</TD>
+		<TD>2</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;日本史概論 １</TD>
+		<TD>2021</TD>
+		<TD>春期</TD>
+		<TD>2</TD>
+		<TD>A</TD>
+		<TD>3</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;日本研究　２</TD>
+		<TD>2021</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>F</TD>
+		<TD>0</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;歴史学（日中関係史） ２</TD>
+		<TD>2022</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>A+</TD>
+		<TD>4</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;言語表現論 １</TD>
+		<TD>2022</TD>
+		<TD>春期</TD>
+		<TD>2</TD>
+		<TD>B</TD>
+		<TD>2</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;日本研究　１　[Online]</TD>
+		<TD>2022</TD>
+		<TD>春期</TD>
+		<TD>2</TD>
+		<TD>A</TD>
+		<TD>3</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;心理学概論　[Online]</TD>
+		<TD>2023</TD>
+		<TD>春期</TD>
+		<TD>2</TD>
+		<TD>B</TD>
+		<TD>2</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;漢字文化圏論 ２</TD>
+		<TD>2023</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>B</TD>
+		<TD>2</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;生態学 １　[Online]</TD>
+		<TD>2022</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>A+</TD>
+		<TD>4</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;参加のデザイン技術　Ａ</TD>
+		<TD>2022</TD>
+		<TD>春期</TD>
+		<TD>4</TD>
+		<TD>A</TD>
+		<TD>3</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;環境表現論 I</TD>
+		<TD>2022</TD>
+		<TD>春期</TD>
+		<TD>2</TD>
+		<TD>F</TD>
+		<TD>0</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;科学の歴史と科学技術政策</TD>
+		<TD>2023</TD>
+		<TD>春期</TD>
+		<TD>2</TD>
+		<TD>F</TD>
+		<TD>0</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;地域自治論 １　[Online]</TD>
+		<TD>2022</TD>
+		<TD>春期</TD>
+		<TD>2</TD>
+		<TD>C</TD>
+		<TD>1</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;地域自治論 ２　[Online]</TD>
+		<TD>2022</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>B</TD>
+		<TD>2</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;民法 ５〔親族〕　[Online]</TD>
+		<TD>2022</TD>
+		<TD>春期</TD>
+		<TD>2</TD>
+		<TD>A</TD>
+		<TD>3</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;民法 １〔総則〕</TD>
+		<TD>2024</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>C</TD>
+		<TD>1</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;グローバルラーニング（憲法24条の歴史） Ａ</TD>
+		<TD>2021</TD>
+		<TD>春期</TD>
+		<TD>2</TD>
+		<TD>F</TD>
+		<TD>0</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;Exploring Cultures through Film 1</TD>
+		<TD>2022</TD>
+		<TD>春期</TD>
+		<TD>2</TD>
+		<TD>A</TD>
+		<TD>3</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;Contemporary Japanese Foreign Policy</TD>
+		<TD>2024</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>F</TD>
+		<TD>0</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;社会保険労務士と学ぶ働く前に知っておきたいワークルールと人事・労務コンサルタント　α　（早稲田大学校友会支援講座）：【グローバル】</TD>
+		<TD>2024</TD>
+		<TD>秋ク</TD>
+		<TD>1</TD>
+		<TD>A+</TD>
+		<TD>4</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;社会保険労務士と学ぶ働く前に知っておきたいワークルールと人事・労務コンサルタント　β　（早稲田大学校友会支援講座）：【グローバル】</TD>
+		<TD>2024</TD>
+		<TD>冬ク</TD>
+		<TD>1</TD>
+		<TD>B</TD>
+		<TD>2</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>　　《ゼミナールI》</TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;ゼミナールI（労働研究／秋学期）</TD>
+		<TD>2022</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>A+</TD>
+		<TD>4</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>◎学際・複合教育課程◎</TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>　【先進専門科目】</TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;国際人的資源マネジメント ２</TD>
+		<TD>2023</TD>
+		<TD>春期</TD>
+		<TD>2</TD>
+		<TD>A+</TD>
+		<TD>4</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;ディスアビリティ・スタディーズ I　[Online]</TD>
+		<TD>2023</TD>
+		<TD>春期</TD>
+		<TD>2</TD>
+		<TD>A+</TD>
+		<TD>4</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;ディスアビリティ・スタディーズ II　[Online]</TD>
+		<TD>2023</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>A+</TD>
+		<TD>4</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;グローバル・ディーセント・ワーク I　[Online]</TD>
+		<TD>2023</TD>
+		<TD>春期</TD>
+		<TD>2</TD>
+		<TD>A+</TD>
+		<TD>4</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;グローバル・ディーセント・ワーク II　[Online]</TD>
+		<TD>2023</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>A</TD>
+		<TD>3</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;知識社会学</TD>
+		<TD>2024</TD>
+		<TD>春期</TD>
+		<TD>2</TD>
+		<TD>F</TD>
+		<TD>0</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;商業史 I</TD>
+		<TD>2024</TD>
+		<TD>春期</TD>
+		<TD>2</TD>
+		<TD>F</TD>
+		<TD>0</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;グローバルビジネス論 ２</TD>
+		<TD>2024</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>F</TD>
+		<TD>0</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;日本環境文化史 ２</TD>
+		<TD>2023</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>G</TD>
+		<TD>0</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;中国研究 １</TD>
+		<TD>2024</TD>
+		<TD>春期</TD>
+		<TD>2</TD>
+		<TD>F</TD>
+		<TD>0</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;日本環境文化史 １</TD>
+		<TD>2024</TD>
+		<TD>春期</TD>
+		<TD>2</TD>
+		<TD>F</TD>
+		<TD>0</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;日本環境文化史 ２</TD>
+		<TD>2024</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>B</TD>
+		<TD>2</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;地域計画システム論 I</TD>
+		<TD>2024</TD>
+		<TD>夏ク</TD>
+		<TD>2</TD>
+		<TD>F</TD>
+		<TD>0</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;平和構築論</TD>
+		<TD>2023</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>B</TD>
+		<TD>2</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;政治行動論 I　[Online]</TD>
+		<TD>2023</TD>
+		<TD>春期</TD>
+		<TD>2</TD>
+		<TD>A</TD>
+		<TD>3</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;政治行動論 II　[Online]</TD>
+		<TD>2023</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>B</TD>
+		<TD>2</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;現代市民権理論　[Online]</TD>
+		<TD>2024</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>A</TD>
+		<TD>3</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;行政法 ３〔行政争訟〕</TD>
+		<TD>2023</TD>
+		<TD>秋ク</TD>
+		<TD>2</TD>
+		<TD>B</TD>
+		<TD>2</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;会社法 ３〔組織再編・M&A〕</TD>
+		<TD>2024</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>F</TD>
+		<TD>0</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;刑法各論 ２〔財産に対する罪〕</TD>
+		<TD>2024</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>A+</TD>
+		<TD>4</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;知的財産権法（特許法、商標法、不正競争防止法）　[Online]</TD>
+		<TD>2024</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>A</TD>
+		<TD>3</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;食料と農業の経済学 １ 〔食料需給の決定要因と食料問題・農業調整問題〕　[Online]</TD>
+		<TD>2023</TD>
+		<TD>春期</TD>
+		<TD>2</TD>
+		<TD>A+</TD>
+		<TD>4</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;食料と農業の経済学 ２ 〔日本の経験と教訓〕　[Online]</TD>
+		<TD>2023</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>A+</TD>
+		<TD>4</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;国際金融論　[Online]</TD>
+		<TD>2024</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>A</TD>
+		<TD>3</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;流通論 I　[Online]</TD>
+		<TD>2024</TD>
+		<TD>春期</TD>
+		<TD>2</TD>
+		<TD>F</TD>
+		<TD>0</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;マルチメディア</TD>
+		<TD>2023</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>C</TD>
+		<TD>1</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>　【ゼミナールII・III】</TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+		<TD><BR></TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;ゼミナールII（労働研究／春学期）　[Online]</TD>
+		<TD>2023</TD>
+		<TD>春期</TD>
+		<TD>2</TD>
+		<TD>A+</TD>
+		<TD>4</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;ゼミナールII（労働研究／秋学期）　[Online]</TD>
+		<TD>2023</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>A+</TD>
+		<TD>4</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;ゼミナールIII（労働研究／春学期）　[Online]</TD>
+		<TD>2024</TD>
+		<TD>春期</TD>
+		<TD>2</TD>
+		<TD>A+</TD>
+		<TD>4</TD>
+	</TR><TR CLASS='operationboxf'>
+		<TD>&nbsp;&nbsp;ゼミナールIII（労働研究／秋学期）　[Online]</TD>
+		<TD>2024</TD>
+		<TD>秋期</TD>
+		<TD>2</TD>
+		<TD>A+</TD>
+		<TD>4</TD>
+	</TR></TABLE>
+	</FORM>
+	</TD>
+	</TR>
+	</TABLE>
+	<table class="subcolor" style="text-align:center;width:100%;" cellspacing="0" cellpadding="0" border="0" summary="copyright">
+		<tbody>
+			<tr>
+				<td><hr style="width:80%;"></td>
+			</tr>
+			<tr>
+				<td>Copyright (C) Waseda University 2002-2025. All rights reserved.</td>
+			</tr>
+			<tr>
+	<!-- 2025-01 CRS DEL/ADD #52413 START -->
+				<td><br></td>
+	<!-- 2025-01 CRS DEL/ADD #52413 END -->
+			</tr>
+		</tbody>
+	</table>
+	</BODY>
+	</HTML>
+	
